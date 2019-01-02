@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceApp
 {
-    interface Kimlik
+    interface IKimlik
     {
+        //SADECE imza bırakılır.
         cinsiyet Cinsiyet { get; set; }
         din Din { get; set; }
         String TcKimlikNo { get; set; }
