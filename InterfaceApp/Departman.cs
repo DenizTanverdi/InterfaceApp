@@ -49,11 +49,11 @@ namespace InterfaceApp
 
         }
 
-        public void PersonellerListele()
+        public void PersonellerListele(ArrayList array)
         {
             Console.WriteLine("Personellerin Listesi ");
             Console.WriteLine("-----------------------");
-            foreach (Personel p in personeller)
+            foreach (Personel p in array)
             {
                 Console.WriteLine($"Tc          : {p.TcKimlikNo} ");
                 Console.WriteLine($"Ad          : {p.Ad} ");
