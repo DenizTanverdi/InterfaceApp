@@ -16,10 +16,17 @@ namespace InterfaceApp
         public string Ad { get { return Ad; } set { Ad = value; } }
         public string Soyad { get { return Soyad; } set { Soyad = value; } }
         public string BabaAdi { get { return BabaAdi; } set { BabaAdi = value; } }
+        private string cepTelefonu;
 
+        public string CepTelefonu
+        {
+            get { return cepTelefonu; }
+            set { cepTelefonu = value; }
+        }
         public string FullName()
         {
             return Ad + " " + Soyad;
         }
     }
+    
 }

@@ -31,6 +31,29 @@ namespace InterfaceApp
             set { iseGiris = value; }
         }
 
+        private calismaSekli calismaSekli;
+
+        public calismaSekli CalismaSekli
+        {
+            get { return calismaSekli; }
+            set { calismaSekli = value; }
+        }
+
+        private string email;
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+        private string cepTelefonu;
+
+        public string CepTelefonu
+        {
+            get { return cepTelefonu; }
+            set { cepTelefonu = value; }
+        }
+
 
 
     }
@@ -45,4 +68,10 @@ namespace InterfaceApp
 
 
     }
+    enum calismaSekli
+    {
+        Sozlesmeli=1,
+        Kadrolu=2
+    }
+    enum 
 }
