@@ -75,7 +75,7 @@ namespace InterfaceApp
             return $"Departman Adi {DepartmanAd} \n Bütcesi : {Butce} \n Personel Sayisi : {personeller.Count}";
         }
        
-        public ArrayList CinsiyetGetir(cinsiyet c){
+        public ArrayList CinsiyetGetir(cinsiyet c ){
             ArrayList per= new ArrayList();
             foreach (Personel p in personeller)
             {

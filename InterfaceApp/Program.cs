@@ -17,8 +17,20 @@ namespace InterfaceApp
             DataEkle();
             //d.PersonellerListele();
             //Console.WriteLine( d.ToString());
-            dep=d.CinsiyetGetir(cinsiyet.Erkek);
-            dep.PersonellerListele();
+            foreach (Personel pers in d.CinsiyetGetir(cinsiyet.Bayan))
+            {
+                Console.WriteLine($"Tc          : {pers.TcKimlikNo} ");
+                Console.WriteLine($"Ad          : {pers.Ad} ");
+                Console.WriteLine($"Soyad       : {pers.Soyad} ");
+                Console.WriteLine($"Baba Adı    : {pers.BabaAdi} ");
+                Console.WriteLine($"Cep Tel     : {pers.CepTelefonu} ");
+                Console.WriteLine($"Doğum Tarihi: {pers.DogumTarihi} ");
+                Console.WriteLine($"Doğum Yeri  : {pers.DogumYeri} ");
+                Console.WriteLine($"Cinsiyet    : {pers.Cinsiyet} ");
+                Console.WriteLine($"Din         : {pers.Din} ");
+                Console.WriteLine($"Email       : {pers.Email} ");
+                Console.WriteLine("---------------------------");
+            }
             Console.ReadLine();
         }
 
