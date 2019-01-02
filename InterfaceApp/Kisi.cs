@@ -8,14 +8,23 @@ namespace InterfaceApp
 {
     class Kisi : IKimlik
     {
-        public cinsiyet Cinsiyet { get { return Cinsiyet; } set { Cinsiyet = value; } }
-        public din Din { get { return Din; } set { Din = value; } }
-        public string TcKimlikNo { get { return TcKimlikNo; } set { TcKimlikNo = value; } }
-        public string DogumYeri { get { return DogumYeri; } set { DogumYeri = value; } }
-        public string DogumTarihi { get { return DogumTarihi; } set { DogumTarihi = value; } }
-        public string Ad { get { return Ad; } set { Ad = value; } }
-        public string Soyad { get { return Soyad; } set { Soyad = value; } }
-        public string BabaAdi { get { return BabaAdi; } set { BabaAdi = value; } }
+        private string ad;
+        private string soyad;
+        string babaAdi;
+        string tcKimlik;
+        DateTime dogumTarihi;
+        string dogumYeri;
+        cinsiyet cinsiyet;
+        din din;
+        
+        public cinsiyet Cinsiyet { get { return cinsiyet; } set { cinsiyet = value; } }
+        public din Din { get { return din; } set { din = value; } }
+        public string TcKimlikNo { get { return tcKimlik; } set { tcKimlik = value; } }
+        public String DogumYeri { get { return dogumYeri; } set { dogumYeri = value; } }
+        public DateTime DogumTarihi { get { return dogumTarihi; } set { dogumTarihi = value; } }
+        public string Ad { get { return ad; } set { ad = value; } }
+        public string Soyad { get { return soyad; } set { soyad = value; } }
+        public string BabaAdi { get { return babaAdi; } set { babaAdi = value; } }
         private string cepTelefonu;
 
         public string CepTelefonu
@@ -23,6 +32,9 @@ namespace InterfaceApp
             get { return cepTelefonu; }
             set { cepTelefonu = value; }
         }
+
+        string IKimlik.DogumYeri { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public string FullName()
         {
             return Ad + " " + Soyad;

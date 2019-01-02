@@ -9,9 +9,9 @@ namespace InterfaceApp
 {
     class Departman
     {
-        private string departmanAd;
+        private departman departmanAd;
 
-        public string DepartmanAd
+        public departman DepartmanAd
         {
             get { return departmanAd; }
             set { departmanAd = value; }
@@ -48,6 +48,7 @@ namespace InterfaceApp
             return bulunan;
 
         }
+
 
 
     }

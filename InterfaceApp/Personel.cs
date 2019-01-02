@@ -73,5 +73,5 @@ namespace InterfaceApp
         Sozlesmeli=1,
         Kadrolu=2
     }
-    enum 
+    
 }

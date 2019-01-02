@@ -13,7 +13,7 @@ namespace InterfaceApp
         din Din { get; set; }
         String TcKimlikNo { get; set; }
         string DogumYeri { get; set; }
-        string DogumTarihi { get; set; }
+        DateTime DogumTarihi { get; set; }
         string Ad { get; set; }
         string Soyad { get; set; }
         string BabaAdi { get; set; }
