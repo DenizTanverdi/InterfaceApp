@@ -19,7 +19,7 @@ namespace InterfaceApp
 
         public string FullName()
         {
-            throw new NotImplementedException();
+            return Ad + " " + Soyad;
         }
     }
 }
